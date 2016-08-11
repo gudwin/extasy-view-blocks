@@ -1,6 +1,6 @@
 {
   "name": "gudwin/extasy-view-blocks",
-  "description": "View Blocks for Extasy",
+  "description": "View Blocks for Extasy ",
   "require": {
     "phpunit/phpunit": "*",
     "gudwin/faid" : "0.1.*"
