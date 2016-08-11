@@ -1,5 +1,5 @@
 {
-  "name": "gisma/extasy-view-blocks",
+  "name": "gudwin/extasy-view-blocks",
   "description": "View Blocks for Extasy",
   "require": {
     "phpunit/phpunit": "*",
