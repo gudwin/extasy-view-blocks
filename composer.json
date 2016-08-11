@@ -1,0 +1,19 @@
+{
+  "name": "gisma/extasy-view-blocks",
+  "description": "View Blocks for Extasy",
+  "require": {
+    "phpunit/phpunit": "*",
+    "gudwin/faid" : "dev-master"
+  },
+  "config": {
+    "bin-dir": "bin/",
+    "vendor-dir": "Vendors/"
+  },
+  "autoload": {
+    "psr-4": {
+      "Extasy\\ViewBlocks\\": "src/",
+      "Extasy\\ViewBlocks\\tests\\": "tests/"
+    }
+  }
+}
+
