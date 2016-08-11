@@ -3,16 +3,15 @@
   "description": "View Blocks for Extasy",
   "require": {
     "phpunit/phpunit": "*",
-    "gudwin/faid" : "dev-master"
+    "gudwin/faid" : "0.1.*"
   },
   "config": {
-    "bin-dir": "bin/",
-    "vendor-dir": "Vendors/"
+    "bin-dir": "bin/"
   },
   "autoload": {
     "psr-4": {
-      "Extasy\\ViewBlocks\\": "src/",
-      "Extasy\\ViewBlocks\\tests\\": "tests/"
+      "Extasy\\ViewBlocks\\tests\\": "tests/",
+      "Extasy\\ViewBlocks\\": "src/"
     }
   }
 }

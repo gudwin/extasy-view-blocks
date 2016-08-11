@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "161763e857a8f1b618ba50be5a6522ab",
-    "content-hash": "b14791fb36fdf7c993a50df5db2ef9d7",
+    "hash": "3dd3ede5a847af9a248c124a35db93d0",
+    "content-hash": "b8fa3d86fe77cba9a707e164673cb6e9",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -63,16 +63,16 @@
         },
         {
             "name": "gudwin/faid",
-            "version": "dev-master",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gudwin/faid.git",
-                "reference": "204c728a16c4766e0bc1b65617b58b6aee4a434b"
+                "reference": "44020a55524d3fee716cc957b1cf898605eb02b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gudwin/faid/zipball/204c728a16c4766e0bc1b65617b58b6aee4a434b",
-                "reference": "204c728a16c4766e0bc1b65617b58b6aee4a434b",
+                "url": "https://api.github.com/repos/gudwin/faid/zipball/44020a55524d3fee716cc957b1cf898605eb02b4",
+                "reference": "44020a55524d3fee716cc957b1cf898605eb02b4",
                 "shasum": ""
             },
             "require": {
@@ -92,7 +92,7 @@
                 }
             ],
             "description": "FAID - first aid PHP Framework",
-            "time": "2016-06-26 21:04:42"
+            "time": "2016-08-11 20:34:27"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1148,9 +1148,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "gudwin/faid": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
