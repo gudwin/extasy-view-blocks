@@ -17,31 +17,17 @@ class BaseBlock implements BaseBlockInterface
 
     public function getCode()
     {
-        return $this->generate();
-    }
-
-    public function forceRefresh()
-    {
-        $this->generate(true);
-    }
-
-    public function generate($force = false)
-    {
-        $blockContents = '';
-        $found = false;
-        if (empty($force)) {
-            try {
-                $blockContents = SimpleCache::get($this->renderPath);
-                $found = true;
-            } catch (\Exception $e) {
-                $found = false;
-            }
+        try {
+            $blockContents = SimpleCache::get($this->renderPath);
+        } catch (\Exception $e) {
+            $blockContents = '';
         }
-        if (empty($found) || $force) {
-            $blockContents = $this->renderBlock();
-        }
-
         return $blockContents;
+    }
+
+    public function refresh()
+    {
+        return $this->renderBlock();
     }
 
     protected function createView()

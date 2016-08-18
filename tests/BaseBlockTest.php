@@ -20,9 +20,14 @@ class BaseBlockTests extends PHPUnit_Framework_TestCase
         } catch ( \Exception $e ) {
         }
     }
-
+    public function testGetCodeWhenEmpty() {
+        $this->assertEquals(0, $this->block->getRenderCalled());
+        $code = $this->block->getCode();
+        $this->assertEmpty( $code );
+    }
     public function testGenerate() {
         $this->assertEquals(0, $this->block->getRenderCalled());
+        $this->block->refresh();
         $code = $this->block->getCode();
         $this->assertEquals("Hello world!", $code);
         $this->assertEquals(1, $this->block->getRenderCalled());
@@ -37,9 +42,10 @@ class BaseBlockTests extends PHPUnit_Framework_TestCase
      * @group current
      */
     public function testForceGenerate() {
+        $this->block->refresh();
         $this->block->getCode();
         $this->assertEquals(1, $this->block->getRenderCalled());
-        $this->block->forceRefresh();
+        $this->block->refresh();
         $this->assertEquals(2, $this->block->getRenderCalled());
     }
 }

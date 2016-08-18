@@ -6,6 +6,6 @@ namespace Extasy\ViewBlocks;
 
 interface BaseBlockInterface
 {
-    public function forceRefresh();
+    public function refresh();
     public function getCode();
 }
